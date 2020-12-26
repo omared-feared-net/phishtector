@@ -16,4 +16,6 @@ def generateIP():
         return str(blockOne) + '.' + str(blockTwo) + '.' + str(blockThree) + '.' + str(blockFour)
 
 
-generateIP()
+f = open("fakeipaddresses", "w")
+f.write(generateIP())
+f.close()
